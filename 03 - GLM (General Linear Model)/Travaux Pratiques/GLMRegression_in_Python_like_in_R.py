@@ -138,8 +138,7 @@ def glm_residplot(res, figsize=(8, 5)):
     sns.histplot( # replicate the old distplot behavior (JFB: 26/11/2023)
     res.resid_deviance, kde=True,
     stat="density", kde_kws=dict(cut=3),
-    alpha=.4, edgecolor=(1, 1, 1, .4),
-)
+    alpha=.4, edgecolor=(1, 1, 1, .4),)
     ax.set_title('Deviance histogram')
     ax.set_xlabel('Deviance')
     ax.set_ylabel('Counts')        
